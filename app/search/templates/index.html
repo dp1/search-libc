@@ -129,6 +129,7 @@ body {
           </div>
           {% endif %}
 
+          {% if libs or notfound %}
           <div class="panel panel-default">
             <div class="panel-heading"><h1 class="panel-title">{{ libs|length }} Matches</h1></div>
             <div class="panel-body">
@@ -145,6 +146,8 @@ body {
               {% endif %}
             </div>
           </div>
+          {% endif %}
+
         </div>
       </div>
     </div>
