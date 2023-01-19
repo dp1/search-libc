@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  libcdb:
+    build: .
+    ports:
+      - "31337:80"
+    volumes:
+      - ./libc-database:/libc-database:ro

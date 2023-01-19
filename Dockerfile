@@ -27,7 +27,6 @@ COPY cron.conf /etc/supervisor/conf.d/cron.conf
 
 # Copy application
 COPY app /app
-COPY libc-database /libc-database
 
 # Generate autocomplete symbols list
 RUN /app/gen_names.sh
