@@ -3,6 +3,7 @@ version: "3"
 services:
   libcdb:
     build: .
+    restart: unless-stopped
     ports:
       - "31337:80"
     volumes:
