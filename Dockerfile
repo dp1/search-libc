@@ -4,7 +4,6 @@ FROM tiangolo/uwsgi-nginx-flask:python3.8
 RUN rm /app/main.py /app/uwsgi.ini
 
 # Install packages
-# TODO: install zstd
 RUN apt-get update \
     && apt-get install -y \
         binutils \
@@ -15,6 +14,7 @@ RUN apt-get update \
         rpm2cpio \
         wget \
         zstd \
+        nano \
     && rm -rf /var/lib/apt/lists/*
 
 # Install cron job
