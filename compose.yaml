@@ -7,4 +7,4 @@ services:
     ports:
       - "31337:80"
     volumes:
-      - ./libc-database:/libc-database:ro
+      - ./libc-database:/libc-database
